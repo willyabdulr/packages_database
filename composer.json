@@ -1,0 +1,29 @@
+{
+    "name": "example/app",
+    "description": "Latihan",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Willy Abdul",
+            "email": "willy@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "classmap": [
+            "database/seeds",
+            "database/factories"
+        ],
+        "psr-4": {
+            "Example\\App\\": "packages/Example/app/src",
+            "App\\": "app/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Example\\App\\": "packages/Example/app/src",
+            "Tests\\": "tests/"
+        }
+    }
+}
